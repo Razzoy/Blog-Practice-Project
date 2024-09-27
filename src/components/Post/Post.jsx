@@ -9,7 +9,7 @@ export function Post({ data }) {
                     <article key={item.header}>
                         <h2>{item.header}</h2>
                         <img src={item.picture?.url} />
-                        <Markdown>{item.content}</Markdown>
+                        <Markdown className={style.markdown}>{item.content}</Markdown>
                         <p>{item.releaseDate}</p>
                         <p>{item.slug}</p>
                     </article>

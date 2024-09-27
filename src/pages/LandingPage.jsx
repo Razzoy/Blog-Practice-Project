@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query"
 import { request } from "graphql-request"
 import { aboutRally } from "../queries/aboutRally"
 import { Post } from "../components/Post/Post"
-import { useState } from "react"
 
 export function LandingPage() {
     const {data, isLoading, error} = useQuery(
